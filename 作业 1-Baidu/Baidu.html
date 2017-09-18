@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>百度一下，你就知道</title>
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" href="image\bd.ico" /> 
+<style type="text/css">
+img
+	{
+		margin-left:50%;
+		margin-top: 6%;
+		position: absolute;
+		left:-135px;
+	}
+input
+	{		
+		border: 1px solid #ccc;
+		font-size: 25px;
+	}
+#guide
+	{
+		margin-top:16px;
+		margin-left: 70%;
+		font-size: 13px;
+	}
+.menu
+	{
+		width: 68px;
+		height: 93px;
+		border:1px solid #ddd;
+		margin-left: 89%; 
+		display: none;
+		position: absolute;;
+		top:41px;
+		left: 28px;
+		box-shadow:1px 1px 6px rgba(0,0,0,.2);
+	}
+.jian
+	{
+		width: 10px;
+		height: 6px;
+		
+		position: absolute;
+		left: -6px;
+		top: -10px;
+
+	}
+.sssz
+	{
+		height: 23px;
+		width: 68px;
+		background-color: white;
+		font-size: 12px; 
+		border: none; 
+		cursor:pointer;
+	}
+.sssz:hover
+	{
+		background-color: #3388ff;
+		color: white;
+	}
+.gjss
+	{
+		height: 23px;
+		width: 68px;
+		background-color: white;
+		font-size: 12px; 
+		border: none; 
+		cursor:pointer;
+	}
+.gjss:hover
+	{
+		background-color: #3388ff;
+		color: white;
+	}
+.gbyc
+	{
+		height: 23px;
+		width: 68px;
+		background-color: white;
+		font-size: 12px; 
+		border: none; 
+		cursor:pointer;
+	}
+.gbyc:hover
+	{
+		background-color: #3388ff;
+		color: white;
+	}
+.ssls
+	{
+		height: 23px;
+		width: 68px;
+		background-color: white;
+		font-size: 12px; 
+		border: none; 
+		cursor:pointer;
+	}
+.ssls:hover
+	{
+		background-color: #3388ff;
+		color: white;
+	}
+.mp
+	{
+		background-color:#3388ff;
+		border:1px; 
+		border-color: #3388ff;
+		color: white;
+		height: 23px;
+		width: 61px;
+		font-size: 13px;
+	}
+#side
+	{
+		width: 85px;
+		height: 757px;
+		float: right;
+		margin-top: -2.7%;
+		margin-left: 94.3%;
+		position: absolute; 
+		font-size: 13px;
+		display: none;
+		background-image: url('image/side.png') 
+	}	
+
+#SearchBlock
+	{
+		margin-left: 50%;
+		margin-top:16%;
+		position: absolute;
+		left: -310px;
+	}
+
+input:hover
+	{
+		border-color: #999999;
+	}
+.BDYX
+	{
+		background-color: #3388ff;
+
+		width: 110px; 
+		height: 40.9px; 
+
+		position: relative;
+		left: -9px;
+		top:-2.2px;
+		color: white;
+		font-size: 16px;
+		font-family: SimSun;
+		cursor:pointer;
+	}
+.BDYX:hover
+	{
+		background-color: #317ef3;
+	}
+#pic
+	{
+		 width:22px; 
+		 height:23px;
+		 margin-top: 16.5%;
+		 margin-left: 70%;
+		 position: absolute;
+		 cursor: pointer;
+	}
+.Search
+	{
+		width: 502px;
+		border:1px solid #ddd;
+		display: none;
+		position: absolute;
+		top:37px;
+	}
+.Search ul li
+	{
+		width: 502px;
+		height: 30px;
+		text-indent: 10px;
+		line-height: 30px;
+		list-style: none;
+	}
+.Search ul li a
+	{
+		color: #000;
+		text-decoration: none;
+		display: block;
+	}
+.Search ul li a:hover
+	{
+		background: #ddd;
+	}
+
+#sjbd
+	{
+		margin-left: 50%; 
+		margin-top:38%;
+		position: absolute;
+		top:-30px;
+		left: -40px;
+	}
+#ads
+	{
+		position: absolute;
+		bottom: 9.5%;
+		left: 39.5%
+	}
+#last
+	{
+		position: absolute;
+		bottom: 6.5%;
+		left: 34%;
+	}
+#ICP
+	{
+		width: 20px;
+		height: 20px;
+		margin-bottom: 2% 
+		margin-left:20%;
+		position: absolute;
+		bottom: -2px;
+		left: 40px;
+	}
+#jinghui
+	{
+		width: 14px;
+		height: 16px;
+		margin-bottom: 1%;
+		margin-left: 105%;
+		position: absolute;
+		bottom: -4px;
+		left: -24px;
+	}
+#bg
+	{
+		margin: 0;
+		padding: 0;
+	}
+.gaoneng
+	{
+		display: block; 
+		font-size:16px;
+		width: 250px;
+		height: 25px;	
+		background-image: url('image/warning.png');
+		background-color: transparent;
+		border: none;
+		cursor: help;
+	}
+.fanhui
+	{
+		display: none; 
+		font-size: 16px;
+		height: 25px;
+		width: 250px; 
+		background-image: url('image/warning.png');
+		background-color: transparent;
+		border: none;
+		cursor: help;
+	}
+</style>
+</head>
+
+
+<body id="bg" style="background-image:none">
+
+<div id="guide">
+	<a href="http://news.baidu.com" style="font-weight: bold; padding-right:16px; color: black;" ;>新闻</a>
+	<a href="https://www.hao123.com" style="font-weight: bold; font-family: Arial; padding-right:16px; color: black">hao123</a>
+	<a href="http://map.baidu.com" style="font-weight: bold; padding-right:16px; color: black">地图</a>
+	<a href="http://v.baidu.com" style="font-weight: bold; padding-right:16px; color: black">视频</a>
+	<a href="https://tieba.baidu.com" style="font-weight: bold; padding-right:16px; color: black">贴吧</a>
+	<a href="http://xueshu.baidu.com" style="font-weight: bold; padding-right:16px; color: black">学术</a>
+	<a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" style=" padding-right:16px; color: black">登录</a>
+	<a  href="#" style=" padding-right:16px; color: black;" onmouseover="show()" onmouseout="hide()">设置</a>
+
+	<div class="menu" onmouseover="show()" onmouseout="hide()">		
+				<img class="jian" src="image\jian.png">
+				<a href="#"><input type="submit" name="sssz" class="sssz" value="搜索设置"></a>
+  				<a href="https://www.baidu.com/gaoji/advanced.html"><input type="submit" name="gjss" class="gjss" value="高级搜索"></a>
+  				<a href="#"><input type="submit" name="gbyc" class="gbyc" value="关闭预测"></a>
+  				<a href="#"><input type="submit" name="ssls" class="ssls" value="搜索历史"></a>
+
+	</div>
+	<input type="button" class="mp" value="更多产品" onmouseover="showside()">
+</div>
+
+<div id="side" onmouseover="showside()" onmouseout="hideside()">
+	<a href="http://www.nuomi.com/?cid=002540" style="margin-top: 125%; position:absolute; left: 30px; color:#737373;">糯米</a><br/>
+	<a href="http://music.baidu.com" style="margin-top: 195%; position:absolute; left: 30px; color:#737373;">音乐</a><br/>
+	<a href="http://image.baidu.com" style="margin-top: 265%; position:absolute; left: 30px; color:#737373;">图片</a><br/>
+	<a href="http://zhidao.baidu.com" style="margin-top: 335%; position:absolute; left: 30px; color:#737373;">知道</a><br/>
+	<a href="http://wenku.baidu.com" style="margin-top: 405%; position:absolute; left: 30px; color:#737373;">文库</a><br/>
+	<a href="http://top.baidu.com" style="margin-top: 475%; position:absolute; left: 25px; color:#737373;">风云榜</a><br/>
+	<a href="//www.baidu.com/more/" style="margin-top: 505%; position:absolute; left: 10px; color:#737373;">全部产品>></a>		
+</div>
+
+<div id=main>
+<img id="logo" src="image\bd_logo.png" width="270px" height="129px" style="text-align: center;"/>
+
+<div id="SearchBlock">
+	<input id="sousuo" type="text" name="SearchBar" tabindex ="2" maxlength="100" style="width: 520px; height: 35.5px; "/>	
+	<a href="javascript:;" onclick="location ='https://www.baidu.com/s?wd='+document.getElementById('sousuo').value;"><input type="submit" class="BDYX" value="百度一下"/></a>
+	<div class="Search">	
+		<ul id="myul" style="background: white;position: absolute;z-index: 2;padding: 0">
+
+		</ul>
+	</div>
+</div>
+<img id="pic" src="image\pg.png" onmouseover="topb()" onmouseout="topg()" />
+
+<input value=" 注意！此按钮可能引起不适！" type="submit" name="gaoneng" class="gaoneng" />
+<input value="哈哈哈哈哈哈 点我返回→_→" type="submit" name="fanhui" class="fanhui" />
+
+<img id=sjbd src="image\sjbd.jpg" width="80px" height="98px"/>
+</div>
+
+<div id="ads">
+	<a href="https://www.baidu.com/cache/sethelp/help.html" style="font-size:12px; color: #A19E9E; padding-right:15px" >把百度设为首页</a>
+	<a href="http://home.baidu.com" style="font-size:12px; color: #A19E9E; padding-right:15px">关于百度</a>
+	<a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome" style="font-size:12px; font-family: Arial; color: #A19E9E; padding-right:15px">About Baidu</a>
+	<a href="http://e.baidu.com/?refer=888" style="font-size:12px; color: #A19E9E">百度推广</a>
+</div>
+
+<div id="last">
+	<span style="font-size:12px; font-family:Arial; font-weight: lighter; color: #A19E9E">©2017 Baidu</span>
+	<a style="font-size:12px; color: #A19E9E; margin-left: -5px;" href="https://www.baidu.com/duty/">用百度前必读</a>
+	<a style="font-size:12px; color: #A19E9E; margin-left: -5px;" href="http://help.baidu.com">意见反馈</a>
+	<span style="font-size:12px; font-family: Arial; color: #A19E9E; margin-left: -5px;">京ICP证030173号 </span>
+	<img id="ICP" src="image\ICP.png"/>
+	<a style="font-size:12px; color: #A19E9E; padding-left: 35px;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+	<img id="jinghui" src="image\jinghui.png">
+</div>
+<script type="text/javascript">
+	var oText = document.getElementById("sousuo");
+	var	oSear = document.querySelector(".Search");
+	var oMenu = document.querySelector(".menu");
+	var	oPic  = document.getElementById("pic");
+	var oBack = document.getElementById("bg");
+	var oLogo = document.getElementById("logo");
+	var oGn   = document.querySelector(".gaoneng");
+	var oFh   = document.querySelector(".fanhui")
+	var oSjbd = document.getElementById("sjbd");
+	var oSide = document.getElementById("side");
+
+	oText.onkeyup = function()
+	{
+		document.getElementById("myul").innerHTML="";
+		if (oText.value)
+		{
+			oSear.style.display = "block";
+		}
+		else
+		{
+			oSear.style.display = "none";
+		}
+		var os = document.createElement("script");
+		os.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+oText.value+"&cb=august";
+		document.body.appendChild(os);
+		os.id="myos"
+	}
+	function show()
+	{
+		oMenu.style.display = "block";
+	}
+	function hide()
+	{
+		oMenu.style.display = "none";
+	}
+
+	function topb()
+	{
+		oPic.src = "image/pb.png";
+	}
+	function topg()
+	{
+		oPic.src = "image/pg.png";
+	}
+
+	oGn.onclick = function()
+	{
+		if (oLogo.src = "image/bd_logo.png") 
+		{
+			oLogo.src = "image/ciyan.gif";
+			oSjbd.src = "image/liangyan.gif";	
+			oBack.style.backgroundImage = 'url(image/huaji.gif)';
+			oGn.style.display="none";
+			oFh.style.display="block";	
+		}		
+	}
+	oFh.onclick = function()
+	{
+		if (oLogo.src = "image/ciyan.gif")
+		{
+			oLogo.src = "image/bd_logo.png";
+			oSjbd.src = "image/sjbd.jpg";
+			oBack.style.backgroundImage = 'none';
+			oGn.style.display="block";
+			oFh.style.display="none";	
+		}
+	}
+
+	function showside()
+	{
+		oSide.style.display = "block";
+	}
+	function hideside()
+	{
+		oSide.style.display = "none";
+	}
+
+	function august(json)
+	{
+		json.s.forEach(function(x){
+			var oLi = document.createElement("li");
+			oLi.id="myli";
+			oLi.innerHTML = "<a href = 'https://www.baidu.com/s?wd='>"+x+"</a>";
+			document.getElementById("myul").appendChild(oLi);
+		});
+	}
+</script>
+
+
+
+</body>
+</html>
