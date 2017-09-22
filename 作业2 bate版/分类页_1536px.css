@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* 头部样式 */
+body{		 
+	text-align:center;
+	background-color: #FFD300;
+	margin:0; 
+	padding:0;
+} 
+
+#header{
+	width: 100%;
+	background-color: #FFD300;
+}
+
+
+
+#header_pic{
+	width: 1536px;
+	height: 50%;
+	position: relative;
+	margin: auto;
+}
+
+#search{
+	width: 500px;
+	height: 50px;
+	background-color: #E7870B;
+	box-shadow: 0 5px 20px 2px;
+	margin-top: -135px;
+	margin-left: 50%;
+}
+
+#search #search_input{
+	width: 75%;
+	height: 80%;
+	margin-top: 0.6%;
+	margin-left: -22%;
+	font-size: 25px;
+	color: lightgray;
+	padding-left: 5px;
+	border: 1px solid lightgray; 
+}
+
+#search #search_submit{
+	width: 21%;
+	height: 88%;
+	position: relative;
+	z-index: 1;
+	top: -89%;
+	margin-left: 77%;
+	border: none;
+	background-color: transparent;
+	background-image: url('image/search_ico_out.png')
+}
+
+div, ul, li{
+	position: relative;
+	margin:0; 
+	padding:0;
+	font-style: normal;
+	font:12px/22px "\5B8B\4F53",Arial, Helvetica, sans-serif
+} 
+
+ol, ul ,li{
+	list-style:none;
+} 
+ 
+#guide_box{
+	position: relative;
+	margin: auto; 
+}
+
+#guide{
+	width:100%; 
+	height:59px; 
+	border-bottom: 5px orange solid;
+	background:#292929;
+	position: relative;
+	margin:78px auto; 
+}
+
+#guide .current{
+	display:inline; 
+	height:60px;
+	line-height:60px; 
+	background:orange;
+	display:inline-block;  
+	color:#FFF; 
+	font-family:"\5FAE\8F6F\96C5\9ED1"; 
+	font-size:20px;
+	text-decoration: none
+}
+
+#guide li{
+	display:inline; 
+	height:60px;
+}
+
+#guide li a{
+	display:inline-block; 
+	padding:0 20px; 
+	height:60px; 
+	line-height:60px; 
+	color:#FFF; 
+	font-family:"\5FAE\8F6F\96C5\9ED1"; 
+	font-size:20px;
+	text-decoration: none
+} 
+
+#guide li a:hover{
+	background:orange;
+} 
+/* 头部样式结束 */
+
+#main{	
+	width: 1200px;
+	height: 600px;
+	background-color: #FAFCDF;
+	border: 5px solid skyblue;
+	position: relative;
+	margin-top:-70px;
+	margin-left: auto;
+	margin-right: auto; 
+	z-index: 1;
+}
+
+#main #main_title{
+	width: 1201px;
+	height: 80px;
+	border: none;
+	position: relative;
+	margin-top: -1px;
+	margin-left: -1px;
+	text-decoration: none;
+	background-color: skyblue;
+}
+
+#main #main_title img{
+	width: 300px;
+	height: 80px;
+	float: left;
+	margin-left: 5px;
+}
+
+#main #library .item{
+	width: 150px;
+	height: 239px;
+	float: left;
+	margin: 68px; 
+	border: 5px double black;
+}
+
+#main #library .item:hover{
+	border-color: skyblue; 
+	text-decoration: underline;
+}
+
+#main #library a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #575656;
+	font-family: "\5FAE\8F6F\96C5\9ED1";
+}
