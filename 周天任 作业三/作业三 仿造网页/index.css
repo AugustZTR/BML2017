@@ -1,0 +1,131 @@
+/*重置样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+/********header开始********/
+#header{
+	width: 1536px;
+	height: 40px;
+	background: #444;
+}
+#header span{
+	padding-left: 1200px;
+	font-size: 12px;
+	color: gray;
+	line-height: 40px;
+}
+/********header结束********/
+.wrap{
+	width: 1530px;
+	margin: 0 auto;
+}
+/********nav开始********/
+#nav{
+	position:absolute;
+	clear: both;
+	width: 100%;
+	height: 44px;
+	overflow: hidden;
+	background: black;
+	text-align: center;
+	opacity: 0.8;
+}
+
+#nav ul{
+	width: 1000px;
+	height: 44px;
+	margin: 0 auto;
+}
+#nav ul li{
+	float: left;
+	width: 65px;
+	padding-left: 50px;
+	line-height: 44px;	
+}
+#nav ul li a{
+	color: white;
+	font-size: 12px;
+}
+#nav ul li a:hover{
+	color: gray;
+}
+/********nav结束********/
+
+/********banner开始********/
+.banner{
+	width: 1536px;
+	height: 587px;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
+#banner1{	
+	background: url('img/banner1.jpg') no-repeat;
+}
+#banner2{
+	background: url('img/banner2.jpg') no-repeat;
+}
+#banner3{
+	background: url('img/banner3.jpg') no-repeat;
+}
+#banner4 ul li, #banner5 ul li{
+	margin: 0 auto;
+	float: left;
+}
+.left{
+	width: 743px;
+	height: 587px;
+	padding-left: 10px;
+}
+.right{
+	width: 743px;
+	height: 587px;	
+	padding-right: 10px;
+}
+#banner4 #left1{
+	background: url('img/banner4_l.jpg') no-repeat;
+}
+#banner4 #right1{
+	background: url('img/banner4_r.jpg') no-repeat;
+}
+#banner5 #left2{
+	background: url('img/banner5_l.jpg') no-repeat;
+}
+#banner5 #right2{
+	background: url('img/banner5_r.jpg') no-repeat;
+}
+/********banner结束********/
+
+#footer{
+	width: 100%;
+	height: 392.4px;
+	background: #f2f2f2;
+}
+#footer div{
+	width: 980px;
+	height: 269.2px;
+	margin: 0 auto;
+}
+#footer div ul{
+	padding-top: 40px;
+	float: left;
+	padding-left: 20px;
+}
+#footer div ul li{
+	width: 176px;
+	font-size: 12px;
+	color: black;
+	line-height: 20px;
+}
+#footer div ul li a{
+	color: black;
+}

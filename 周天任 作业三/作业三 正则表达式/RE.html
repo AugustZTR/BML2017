@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="RE.css">
+    <script type="text/javascript" src="RE.js"></script>
+
+</head>  
+<body> 
+	 
+    <div class="container">  
+        <h1>注册</h1>  
+        <form class="register">  
+          用户名： <input type = "text" placeholder = "输入以字母开头的6~20位用户名" id = "Name" class="text" />  
+        <label id="lname"></label><br/>  
+          密码：  <input type = "password" placeholder = "输入密码" id = "Pwd1" class="text"/>  
+        <label id="lpass1"></label><br/>  
+          确认密码：<input type = "password" placeholder = "再次输入密码" id = "Pwd2" class="text"/>
+        <label id="lpass2"></label><br/>  
+         <input type="button" value="注册" id="btn1" onclick="judge()" />  
+         <input type="reset"  value="重置" id="btn2" />  
+        </form>         
+    </div>  
+      
+</body>  
+</html> 

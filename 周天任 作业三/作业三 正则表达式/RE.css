@@ -1,0 +1,64 @@
+*{
+    margin:0;  
+    padding:0;   
+    font-size:14px;
+    font-family: '微软雅黑';
+    font-style:normal; 
+}  
+body{
+    background:red;
+    background: url('bg_pic.jpg') no-repeat;
+    background-size: 100%;
+}  
+.container{  
+    width:550px;  
+    height:300px;  
+    background:white;  
+    margin:90px auto;  
+    padding-bottom:10px;
+    box-shadow: 10px 10px 30px #B8B7B7;
+    background: rgba(0,0,0,0.5);  
+}  
+.container:hover{
+    background: rgba(0,0,0,0.6);  
+}
+.container h1{  
+    font-size:22px;  
+    font-family:微软雅黑;  
+    text-align:center;  
+    color:#333;  
+    display:block;  
+    margin:20px;
+    padding-top: 30px;  
+    border:0px solid #DBDBDB;  
+}  
+.register{  
+margin-left:100px;
+  
+}  
+#Name,#Pwd1,#Pwd2{  
+color:gray;  
+height:25px;  
+width:200px;  
+font-size:10px;  
+padding-left:10px;  
+margin-top:10px;  
+}  
+#Name{
+    margin-left: 10px;
+}
+#Pwd1{
+    margin-left: 24px;
+}
+#btn1,#btn2{  
+height:25px;  
+width:60px;  
+display:block;  
+float:left;  
+margin-left:77px;  
+margin-top:20px;  
+}  
+#lname,#lpass1,#lpass2{  
+color:#FF0000;   
+font-size:10px;  
+} 

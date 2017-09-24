@@ -1,0 +1,243 @@
+/*样式重置*/
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+/***********introduce开始***********/
+#introduce{
+	height: 430px;
+	background: #f4f1f4;
+	text-align: center;
+}
+#introduce h1{
+	color: gray;
+	padding-top: 10px;
+}
+#introduce-list{
+	float: left;
+	width: 600px;
+	padding-top: 30px;
+	padding-left: 100px;
+
+}
+#introduce ul li{
+	width: 600px;
+	height: 115px;
+}
+#introduce ul li div{
+	width: 115px;
+	height: 115px;
+	
+}
+#grn{
+	background: url('../img/about-bg.jpg') no-repeat;
+	background-position: top; 
+}
+#ylw{
+	background: url('../img/about-bg.jpg') no-repeat;
+	background-position: center;
+}
+#ble{
+	background: url('../img/about-bg.jpg') no-repeat;
+	background-position: bottom;
+}
+
+#title1, #title2 ,#title3{
+	margin-top: -100px;
+	margin-left: -225px;
+	color: #70bf7d;
+}
+#title2{
+	color: #fde257;
+}
+#title3{	
+	color: #6cc9da;
+}
+#introduce .about{
+	float: right;
+	height: 80px;
+	width: 490px;
+	margin-right: -40px;
+	text-align: left;
+	font-size: 12px;
+	line-height: 20px;
+}
+#introduce img{
+	padding-top: 40px;
+}
+/***********introduce结束***********/
+
+/**********slogan开始***********/
+#slogan{
+	height: 200px;
+	background: #6293e8;
+	text-align: center;
+}
+#slogan-main{
+	border: none;
+	width: 500px;
+	margin: 0 auto;
+}
+#slogan h1{
+	font-size: 30px;
+	font-family: '微软雅黑';
+	color: white;
+	padding-top: 30px;
+}
+#slogan h2{
+	font-size: 20px;
+	font-family: '微软雅黑';
+	color: white;
+	padding-top: 20px;
+}
+#slogan p1{
+	color: white;
+}
+#slogan p2{
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+}
+/**********slogan结束***********/
+
+/**********course开始***********/
+#course{
+	height: 420px;
+	background: white;
+}
+#ads{
+	width: 550px;
+	height: 420px;
+	float: left;
+	margin: 20px 0px;
+	
+}
+#ads li{
+	height:370px;
+	width: 180px; 
+	float: left;
+	text-align: center;
+	background: url('../img/about-Article.jpg') no-repeat;
+	background-position: left bottom;
+}
+#ads li div{
+	width: 160px;
+	color: #717171;
+}
+#ads li p{
+	text-align: left;
+	font-size: 12px;
+	padding-left: 30px;
+	padding-top: 15px;
+	line-height: 20px;
+}
+#border{
+	float: left;
+	margin-top: 155px;
+	margin-left: -20px;
+}
+#register{
+	width: 300px;
+	height: 340px;
+	float: left;
+	margin-top: -400px;
+	margin-left: 700px;
+	text-align: center;
+	color: gray;
+}
+#register form{
+	width: 300px;
+	height:280px;
+	margin-top: 20px;
+	padding-top: 20px;
+	border: 2px dotted orange; 
+}
+#register form label{
+	font-size: 14px;
+	font-weight: bold;
+	color: #6C6B6B;
+	line-height: 30px;
+}
+#register form label span{
+	color: red;
+}
+#register form input{
+	width: 230px;
+	height: 25px;
+	border: 1px dotted gray;
+}
+#register form .check-word{
+	padding-top: 20px;
+}
+#register form .check{
+	width: 80px;
+	height: 22px;
+	margin-top: 20px;
+}
+#register form img{
+	width: 70px;
+	height: 50px;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+#register form .btn{
+	width: 90px;
+	height: 30px;
+	padding: 10px;
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background: gray;
+}
+/**********course结束***********/
+
+/**********advantage开始***********/
+#advantage{
+	height: 500px;
+	background: #89bb71;
+}
+#we{
+	float: left;
+	margin-left: -450px;
+	margin-top: 40px;
+	text-align: center;
+	color: white;
+}#we ul, #others ul{
+	background: url('../img/index_in_9c75.png') no-repeat;
+	background-position: left;
+	float: left;
+	margin-top: 20px;
+}
+#we li, #others li{	
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 60px;
+	text-align: left;
+	padding-left: 20px;
+}
+#advantage h1{
+	float: left;
+	margin-left: -50px;
+	margin-top: 250px;
+	font-weight: bolder;
+	font-size: 60px;
+	color: white;
+}
+#others{
+	float: right;
+	margin-right: 150px;
+	margin-top: 40px;
+	text-align: center;
+	color: white;
+/**********advantage结束***********/

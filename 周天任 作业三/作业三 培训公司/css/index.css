@@ -1,0 +1,305 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+/**********news开始***********/
+#news{
+	height: 152px;
+}
+#trends{
+	width: 640px;
+	float: left;
+	margin-top: 20px;
+}
+/* #trends .trends-title, #notice .notice-title{
+	float: left;
+	color: #333;
+	font-size: 16px;
+}
+#trends .trends-more, #notice .notice-more{
+	float: right;
+	color: #333;
+	font-size: 12px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+} 
+#trends .trends-more:hover, #notice .notice-more:hover{
+	background-color: orange;
+	border-radius: 15px;
+	color: white;
+	font-weight: bold;
+}*/
+.title{
+	float: left;
+	color: #333;
+	font-size: 16px;
+}
+.more{
+	float: right;
+	color: #333;
+	font-size: 12px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.more:hover{
+	background-color: orange;
+	border-radius: 15px;
+	color: white;
+	font-weight: bold;
+}
+#trends .trends-list{
+	clear: both;
+}
+.news-item{
+	width: 295px;
+	height: 30px;
+	float: left;
+	background: url('../img/news-list-style.png') no-repeat;
+	text-indent: 15px;
+}
+.news-item a{
+	color: #333;
+	font-size: 12px;
+}
+#notice{
+	width: 400px;
+	height: 100%;
+	float: right;
+	margin-top: 20px;
+}
+#notice .notice-list{
+	width: 382px; 
+	border: 1px dotted #333;
+	clear: both; 
+}
+#notice .notice-list li{
+	height: 28px;
+	float: none;
+	text-align: center;
+}
+/**********news结束***********/
+
+/**********course开始***********/
+#course{
+	height: 380px;
+	line-height: 30px;
+	margin-top: 20px;
+	padding-top:60px; 
+	background: #F5F6F6;
+	text-align: center;
+}
+#course h1, #course h3{
+	color: #717171;
+}
+#course .course-list li{
+	float: left;
+	padding: 13px;
+}
+#course .course-list a{
+	font-weight: bolder;
+	font-family: '微软雅黑';
+	color: #717171;
+}
+#course .course-list a:hover{
+	color: darkblue;
+}
+#course-more{
+	float: right;
+	color: #333;
+	font-size: 12px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	margin-right: 500px;
+}
+#course-more:hover{
+	background-color: #8ABF8A;
+	border-radius: 15px;
+	color: white;
+	font-weight: bold;
+}
+/**********course结束***********/
+
+/**********slogan开始***********/
+#slogan{
+	height: 320px;
+	background: #8ABF8A;
+	text-align: center;
+}
+#slogan table{
+	margin:0 auto;
+	padding-top: 30px; 
+}
+.th{
+	width: 100px;
+	height: 30px;
+	font-weight: bolder;
+}
+#th1{	
+	color: #8ABF8A;
+	background: white;
+}
+#th2{
+	color: white;
+	background: #F8972C;
+}
+#slogan-main{
+	border: none;
+	width: 500px;
+	margin: 0 auto;
+}
+#slogan h1{
+	font-size: 30px;
+	font-family: '微软雅黑';
+	color: white;
+	padding-top: 30px;
+}
+#slogan h2{
+	font-size: 20px;
+	font-family: '微软雅黑';
+	color: white;
+	padding-top: 20px;
+}
+#slogan p1{
+	color: white;
+}
+#slogan p2{
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: bold;
+	color: white;
+}
+#slogan-aboutUs{
+	width: 90px;
+	height: 25px;
+	margin: 20px auto;
+	font-size: 12px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white; 
+}
+/**********slogan结束***********/
+
+/**********question开始***********/
+#question{
+	height:410px;
+	background: #fae153;
+}
+#usualQ{
+	width: 550px;
+	height: 250px;
+	float: left;
+	margin: 40px 80px;
+}
+#usualQ h3{
+	float: left;
+	font-size: 20px;
+	color: gray;
+}
+#moreQ{
+	float: right;
+	color: #333;
+	font-size: 12px;
+	width: 100px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+#moreQ:hover{
+	background-color: skyblue;
+	border-radius: 15px;
+	color: white;
+	font-weight: bold;
+}
+#question-list{
+	width: 500px;
+	height: 160px;
+	border: 1px dotted gray;
+	clear: both;
+	margin-top:40px; 
+	padding: 20px;
+}
+#question-list li{
+	width: 500px;
+	height: 30px;
+	line-height: 40px;
+	float: left;
+	background: url('../img/question-list-style.png') no-repeat;
+	background-position: 5px 15px;
+	font-size: 13px;
+	color: darkgray;
+	text-indent: 15px;
+	border-bottom: 1px dotted gray;
+}
+#register{
+	width: 300px;
+	height: 340px;
+	float: right;
+	margin-top: 40px;
+	margin-right: 80px;
+	text-align: center;
+	color: gray;
+}
+#register form{
+	width: 300px;
+	height:280px;
+	margin-top: 20px;
+	padding-top: 20px;
+	border: 1px dotted gray; 
+}
+#register form label{
+	font-size: 14px;
+	font-weight: bold;
+	color: #6C6B6B;
+	line-height: 30px;
+}
+#register form label span{
+	color: red;
+}
+#register form input{
+	width: 230px;
+	height: 25px;
+	border: 1px dotted gray;
+}
+#register form .check-word{
+	padding-top: 20px;
+}
+#register form .check{
+	width: 80px;
+	height: 22px;
+	margin-top: 20px;
+}
+#register form img{
+	width: 70px;
+	height: 50px;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+#register form .btn{
+	width: 90px;
+	height: 30px;
+	padding: 10px;
+	margin-top: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	background: gray;
+}
+/**********question结束***********/
+
